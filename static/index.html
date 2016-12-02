@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: ;
+    top: 50%;
+	}
+	
+
+</style>
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+
+<script>
+
+
+
+
+$(document).ready(function(){
+    $("#gamebutton1").click(function(){
+        $.get("/unchart4", function(data, status){
+		$("#details").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#gamebutton2").click(function(){
+        $.get("/forza", function(data, status){
+		$("#details").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#gamebutton3").click(function(){
+        $.get("/inside", function(data, status){
+		$("#details").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#gamebutton4").click(function(){
+        $.get("/tomb", function(data, status){
+		$("#details").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#gamebutton5").click(function(){
+        $.get("/outwatch", function(data, status){
+		$("#details").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#gamebutton7").click(function(){
+        $.get("/battlefield", function(data, status){
+		$("#details").html(data);
+
+        });
+    });
+});
+
+
+$(document).ready(function(){
+    $("#gamebutton8").click(function(){
+        $.get("/sun", function(data, status){
+		$("#details").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#hidebutton").click(function(){
+        $.get("/hide", function(data, status){
+		$("#details").html(data);
+
+        });
+    });
+});
+
+
+$(document).ready(function(){
+    $("#switchbutton").click(function(){
+        $.get("/switch", function(data, status){
+		$("#details2").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#salesbutton").click(function(){
+        $.get("/sales", function(data, status){
+		$("#details2").html(data);
+
+        });
+    });
+});
+$(document).ready(function(){
+    $("#hidebutton2").click(function(){
+        $.get("/hide2", function(data, status){
+		$("#details2").html(data);
+
+        });
+    });
+});
+
+
+$(document).ready(function(){
+    $("#allbutton1").click(function(){
+        $.get("/show", function(data, status){
+		$("#details3").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#allbutton2").click(function(){
+        $.get("/show2", function(data, status){
+		$("#details3").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#allbutton3").click(function(){
+        $.get("/show3", function(data, status){
+		$("#details3").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#allbutton4").click(function(){
+        $.get("/show4", function(data, status){
+		$("#details3").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#allbutton5").click(function(){
+        $.get("/show5", function(data, status){
+		$("#details3").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#hidebutton3").click(function(){
+        $.get("/hide3", function(data, status){
+		$("#details3").html(data);
+
+        });
+    });
+});
+
+
+
+$(document).ready(function(){
+    $("#newbutton1").click(function(){
+        $.get("/zelda", function(data, status){
+		$("#details4").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#newbutton2").click(function(){
+        $.get("/god", function(data, status){
+		$("#details4").html(data);
+
+        });
+    });
+});
+
+
+$(document).ready(function(){
+    $("#newbutton3").click(function(){
+        $.get("/resident", function(data, status){
+		$("#details4").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#newbutton4").click(function(){
+        $.get("/gran", function(data, status){
+		$("#details4").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#newbutton5").click(function(){
+        $.get("/tekken", function(data, status){
+		$("#details4").html(data);
+
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#newbutton6").click(function(){
+        $.get("/red", function(data, status){
+		$("#details4").html(data);
+
+        });
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $("#hidebutton4").click(function(){
+        $.get("/hide4", function(data, status){
+		$("#details4").html(data);
+
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+   </head>
+   <body>
+  
+   <h2 align="center">Best reviewed Games in 2016</h2>
+   <br>
+   <div class="wrapper">
+    <button id="hidebutton" class="button">Hide</button>
+	</div>
+	<br>
+   <div class="container">
+   <div class="wrapper">
+     <button type="button"  id="gamebutton1"  class="btn btn-primary">Uncharted 4: A Thief's End</button>
+	   <button type="button"  id="gamebutton2" class="btn btn-success">Forza Horizon 3</button>
+	    <button type="button" id="gamebutton3" class="btn btn-warning">Inside</button>
+		<button type="button"  id="gamebutton4" class="btn btn-default">Rise of the Tomb Raider</button>
+		  <button type="button" id="gamebutton5" class="btn btn-danger">Overwatch</button>
+			<button type="button"  id="gamebutton7"  class="btn btn-primary">Battlefield 1</button>
+			<button type="button"  id="gamebutton8"  class="btn btn-warning">Pokemon Sun and Moon</button>
+			</div>
+			<br>
+			<br>
+  
+ 
+   <div id ="details">
+</div>
+</div>
+<hr/>
+
+  <h2 align="center">News</h2>
+  <br>
+  <div class="wrapper">
+    <button id="hidebutton2" class="button">Hide</button>
+	</div>
+	<br>
+	 <div class="wrapper">
+	<button type="button" id="switchbutton" class="btn btn-danger">New Nintendo Console</button>
+	 <button type="button"  id="salesbutton"  class="btn btn-primary">Xbox one sales</button>
+	 </div>
+	 <br>
+	 <br>
+    <div id ="details2">
+</div>
+
+<hr/>
+
+ <h2 align="center"> Here are the top 5 classic Games.</h2>
+ <br>
+ <h3 align="center">Please click the number to see the name of the highely classic rated game</h3>
+  <br>
+  <div class="wrapper">
+    <button id="hidebutton3" class="button">Hide</button>
+	</div>
+	`
+	<br>
+	 <div class="wrapper">
+	  <button type="button"  id="allbutton1"  class="btn btn-primary">1</button>
+	    <button type="button"  id="allbutton2"  class="btn btn-success">2</button>
+		<button type="button"  id="allbutton3"  class="btn btn-warning">3</button>
+		<button type="button"  id="allbutton4"  class="btn btn-danger">4</button>
+		<button type="button"  id="allbutton5"  class="btn btn-default">5</button>
+		</div>
+		<br>
+		<br>
+
+		 
+    <div id ="details3">
+</div>
+<hr/>
+
+
+
+<h2 align="center">Upcoming anticipated game</h2>
+  <br>
+   <div class="wrapper">
+    <button id="hidebutton4" class="button">Hide</button>
+	</div>
+	`
+	<br>
+	 <div class="wrapper">
+	  <button type="button"  id="newbutton1"  class="btn btn-primary">The legend of Zelda: Breath of the wild</button>
+	    <button type="button"  id="newbutton2"  class="btn btn-default">God of War</button>
+		<button type="button"  id="newbutton3"  class="btn btn-warning">Resident Evil 7: Biohazard</button>
+		<button type="button"  id="newbutton4"  class="btn btn-success">Gran Turismo:Sport</button>
+		<button type="button"  id="newbutton5"  class="btn btn-primary">Tekken 7</button>
+		<button type="button"  id="newbutton6"  class="btn btn-danger">Red Dead Redemption 2</button>
+		</div>
+
+		 
+    <div id ="details4">
+</div>
+
+
+
+
+  
+
+  
+
+
+
+ 
+
+
+
+
+
+
+
+   </body> 
+   </html>
